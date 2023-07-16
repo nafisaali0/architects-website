@@ -21,11 +21,11 @@ h3 {
   font-size: 45px;
   font-weight: 700;
 }
-/* h4 {
+h4 {
   color: var(--dark-01, #131313);
   font-size: 20px;
   font-weight: 600;
-} */
+}
 p {
   color: var(--dark-03, #727272);
   font-size: 16px;
@@ -112,7 +112,21 @@ span {
 /* team section end */
 
 /* feature section start */
-
+.feature-container {
+  display: flex;
+  gap: 100px;
+}
+.feature-content h3 {
+  border-left: 5px solid var(--primary-color);
+  padding-left: 20px;
+}
+.feature-content .card {
+  padding: 20px;
+  margin-block: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
 /* feature section end */
 
 /* card container start */
@@ -128,23 +142,13 @@ span {
   padding: 50px;
   margin-top: 50px;
 }
-.icon-card
-h3,p{
-    margin-top: 10px;
+.icon-card h3,
+p {
+  margin-top: 10px;
 }
 /* card container end */
 
-
-
-
-
-
-
-
-
-
-
-
+/* ---------------------------------------------------- */
 
 
 
@@ -175,15 +179,13 @@ h3,p{
   h4 {
     font-size: 15px;
   }
-  /* for banner section */
-  /* body{
-    overflow: hidden;
-  } */
+ /* for banner section */
   header {
     padding: 20px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .feature-container{
     flex-direction: column;
   }
   nav > ul {
@@ -196,10 +198,21 @@ h3,p{
   .teams-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card-container{
+  .card-container {
     padding: 0 20px 0 20px;
   }
+  .feature-container{
+    padding: 40px;
+  }
+  .feature-img {
+    margin: 0 auto;
+  }
+  .feature-img img{
+    display: block;
+      width: 90%;
+  }
 }
+
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   h1 {
@@ -216,7 +229,8 @@ h3,p{
     padding: 20px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .feature-container {
     flex-direction: column;
   }
   nav > ul {
@@ -225,7 +239,17 @@ h3,p{
   .btn-primary {
     padding: 15px 25px;
   }
-  .card-container{
+  .card-container {
     padding: 0 20px 0 20px;
+  }
+  .feature-container{
+    padding: 40px;
+  }
+  .feature-img {
+    margin: 0 auto;
+  }
+  .feature-img img{
+    display: block;
+      width: 90%;
   }
 }
