@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ff900e;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+h1 {
+  color: var(--dark-01, #131313);
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 35px;
+}
+h3 {
+  color: var(--dark-01, #131313);
+  font-size: 45px;
+  font-weight: 700;
+}
+h4 {
+  color: var(--dark-01, #131313);
+  font-size: 20px;
+  font-weight: 600;
+}
+p {
+  color: var(--dark-03, #727272);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 35px;
+}
+a {
+  color: var(--dark-02, #424242);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-decoration: none;
+}
+.btn-primary{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 20px 25px;
+  border: none;
+  margin-top: 35px;
+}
+/* .section{
+    margin-top: 30px;
+} */
+/* header section start */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 240px;
+}
+/* nav section start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+}
+/* nav section end */
+/* banner-section-start */
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner img {
+  margin-top: 35px;
+  width: 100%;
+}
+/* banner-section-end */
+/* header end */
+
+/* mobile device*/
+@media screen and (max-width:576px) {
+  h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  /* for banner section */
+  /* body{
+    overflow: hidden;
+  } */
+  header {
+    padding: 20px;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav>ul{
+    margin-top: 15px;
+  }
+  .btn-primary {
+    font-size: 15px;
+    padding: 15px 25px;
+  }
+}
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+    h1 {
+      font-size: 55px;
+    }
+    h3 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 35px;
+    }
+    /* for banner section */
+    header {
+      padding: 20px;
+    }
+    nav{
+      flex-direction: column;
+    }
+    nav>ul{
+      margin-top: 15px;
+    }
+    .btn-primary {
+      padding: 15px 25px;
+    }
+  }
